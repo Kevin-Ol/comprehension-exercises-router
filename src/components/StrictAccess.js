@@ -9,10 +9,8 @@ class StrictAccess extends Component {
 
     const AcessDenied = () => {
         alert('Access denied');
-        console.log('acesso negado')
         return <Redirect to="/" />
     }
-    { console.log('renderizou') }
     return (
       <div>
           { (username === 'joao' && password === 1234) ? <p>Welcome joao!</p> : AcessDenied()}

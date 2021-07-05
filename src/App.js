@@ -13,7 +13,7 @@ class App extends Component {
           <Route path="/users/:id" render={(props) => <Users {...props} greetingsMessage="Good Morning" /> } />
           <Route path="/about" component={About}/>
           <Route path="/strict-access" render={() => <StrictAccess user={{username: 'joao',
-        password: 123}}/>}/>
+        password: 1234}}/>}/>
           <Route path="/" component={Home}/>
         </Switch>
         <ul>
